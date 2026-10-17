@@ -10,10 +10,10 @@ const CV_DATA = {
   profile: {
     name: "Nguyễn Thị Tường Vi",
     title: "Nhân viên Đảm bảo chất lượng xét nghiệm",
-    org: "Khoa Xét nghiệm – MEDIC Lab Hòa Hảo",
+    org: "Khoa Xét nghiệm, Trung tâm Y tế Hòa Hảo",
     location: "TP. Hồ Chí Minh, Việt Nam",
-    email: "email-cua-ban@example.com",      // [CẬP NHẬT]
-    phone: "0900 000 000",                    // [CẬP NHẬT]
+    email: "ngtuongvi1990@gmail.com",
+    phone: "0945 400 881",
     photo: "",                                // ví dụ: "docs/anh-chan-dung.jpg" (để trống sẽ hiện chữ cái đầu)
     summary: "",   // dòng mô tả giới thiệu (để trống = không hiển thị)
     links: [
@@ -45,8 +45,8 @@ const CV_DATA = {
 
   experience: [
     {
-      role: "Nhân viên Đảm bảo chất lượng xét nghiệm – Tổ Quản lý chất lượng, Khoa Xét nghiệm",
-      org: "MEDIC Lab Hòa Hảo",
+      role: "Nhân viên Đảm bảo chất lượng xét nghiệm, Tổ Quản lý chất lượng",
+      org: "Khoa Xét nghiệm, Trung tâm Y tế Hòa Hảo",
       period: "2011 – nay",
       points: [
         "Quản lý chất lượng xét nghiệm theo quy luật Westgard, thang Sigma và tiêu chuẩn ISO 15189.",

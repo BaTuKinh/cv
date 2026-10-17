@@ -3,40 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nguyễn Thị Tường Vi – CV</title>
-  <meta name="description" content="CV trực tuyến: quản lý & đảm bảo kỹ thuật khoa xét nghiệm, thống kê xử lý số liệu nghiên cứu.">
+  <title>Nguyễn Thị Tường Vi – Đảm bảo chất lượng xét nghiệm</title>
+  <meta name="description" content="Hồ sơ nghề nghiệp của Nguyễn Thị Tường Vi: nhân viên Đảm bảo chất lượng xét nghiệm, Trung tâm Y tế Hòa Hảo. Công bố khoa học, đào tạo ISO 15189, Westgard và Sigma.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip" href="#main">Bỏ qua điều hướng</a>
+
   <header class="topbar no-print">
-    <nav>
-      <a href="#about">Giới thiệu</a>
-      <a href="#experience">Kinh nghiệm</a>
-      <a href="#skills">Kỹ năng</a>
-      <a href="#research">Nghiên cứu</a>
-      <a href="#education">Học vấn</a>
-      <button id="theme-btn" type="button" aria-label="Đổi giao diện sáng/tối">◐</button>
-      <button id="print-btn" type="button">In / Lưu PDF</button>
-    </nav>
+    <div class="topbar-in">
+      <a class="brand" href="#top" id="brand"></a>
+      <nav aria-label="Các mục chính">
+        <a href="#experience">Kinh nghiệm</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#research">Nghiên cứu</a>
+        <a href="#education">Học vấn</a>
+        <a href="#certificates">Đào tạo</a>
+      </nav>
+      <div class="tools">
+        <button id="theme-btn" type="button" aria-label="Đổi giao diện sáng hoặc tối">Giao diện</button>
+        <button id="print-btn" type="button" class="solid">In hoặc lưu PDF</button>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section id="about" class="hero"></section>
-    <section id="highlights" class="stats"></section>
-    <section id="experience"><h2>Kinh nghiệm làm việc</h2><div id="exp-list" class="timeline"></div></section>
-    <section id="skills"><h2>Kỹ năng chuyên môn</h2><div id="skill-list" class="cards"></div></section>
-    <section id="research">
-      <h2>Nghiên cứu, báo cáo &amp; poster</h2>
-      <div class="filters no-print" id="filters"></div>
-      <div id="res-list" class="res-list"></div>
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="hero-text" id="about"></div>
+      <figure class="chart" id="chart"></figure>
     </section>
-    <section id="education"><h2>Học vấn</h2><div id="edu-list" class="timeline"></div></section>
-    <section id="certificates"><h2>Đào tạo &amp; chứng chỉ</h2><div id="cert-list" class="res-list"></div></section>
-    <section id="memberships"><h2>Thành viên hiệp hội</h2><div id="member-list" class="chips"></div></section>
+
+    <dl id="highlights" class="facts"></dl>
+
+    <section id="experience" class="sec"><h2>Kinh nghiệm làm việc</h2><div class="body" id="exp-list"></div></section>
+    <section id="skills" class="sec"><h2>Kỹ năng chuyên môn</h2><div class="body" id="skill-list"></div></section>
+    <section id="research" class="sec">
+      <h2>Nghiên cứu và công bố</h2>
+      <div class="body">
+        <div class="filters no-print" id="filters" role="group" aria-label="Lọc theo loại công trình"></div>
+        <div id="res-list"></div>
+      </div>
+    </section>
+    <section id="education" class="sec"><h2>Học vấn</h2><div class="body" id="edu-list"></div></section>
+    <section id="certificates" class="sec"><h2>Đào tạo và chứng chỉ</h2><div class="body" id="cert-list"></div></section>
+    <section id="memberships" class="sec"><h2>Thành viên hiệp hội</h2><div class="body" id="member-list"></div></section>
   </main>
 
   <footer>
-    <span id="foot-name"></span> · Cập nhật <span id="foot-date"></span>
+    <span id="foot-name"></span>
+    <span id="foot-date"></span>
   </footer>
 
   <script src="data.js"></script>
