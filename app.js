@@ -21,7 +21,7 @@
         ${p.phone ? `<a href="tel:${esc(p.phone.replace(/\s/g, ""))}">☎ ${esc(p.phone)}</a>` : ""}
         ${links.join("")}
       </div>
-      <p class="summary">${esc(p.summary)}</p>
+      ${p.summary ? `<p class="summary">${esc(p.summary)}</p>` : ""}
     </div>`;
   document.title = `${p.name} – CV`;
   $("foot-name").textContent = p.name;
@@ -85,6 +85,11 @@
       <div class="meta">${esc(c.org)}${c.year ? " · " + esc(c.year) : ""}</div>
       ${c.file ? `<div class="links"><a href="${esc(c.file)}" target="_blank" rel="noopener">📄 Xem</a></div>` : ""}
     </article>`).join("");
+
+  // ---- Hội viên ----
+  const members = D.memberships || [];
+  if (!members.length) $("memberships").remove();
+  else $("member-list").innerHTML = members.map((m) => `<span class="chip">${esc(m)}</span>`).join("");
 
   // ---- Giao diện sáng/tối + in ----
   const root = document.documentElement;
