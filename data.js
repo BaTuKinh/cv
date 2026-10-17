@@ -11,8 +11,8 @@ const CV_DATA = {
     title: "Quản lý & Đảm bảo kỹ thuật Khoa Xét nghiệm",
     org: "MEDIC Lab Hòa Hảo",
     location: "TP. Hồ Chí Minh, Việt Nam",
-    email: "email-cua-ban@example.com",      // [CẬP NHẬT]
-    phone: "0900 000 000",                    // [CẬP NHẬT]
+    email: "ngtuongvi1990@gmail.com",      // [CẬP NHẬT]
+    phone: "0945 400 881",                    // [CẬP NHẬT]
     photo: "",                                // ví dụ: "docs/anh-chan-dung.jpg" (để trống sẽ hiện chữ cái đầu)
     summary:
       "Nhân viên quản lý, đảm bảo kỹ thuật của Khoa Xét nghiệm MEDIC Lab Hòa Hảo: giám sát chất lượng xét nghiệm, " +
@@ -49,7 +49,7 @@ const CV_DATA = {
     {
       role: "Nhân viên quản lý, đảm bảo kỹ thuật – Khoa Xét nghiệm",
       org: "MEDIC Lab Hòa Hảo",
-      period: "[CẬP NHẬT] 20XX – nay",
+      period: "2011 – nay",
       points: [
         "Giám sát chất lượng kỹ thuật và quy trình vận hành của khoa xét nghiệm.",
         "Theo dõi nội kiểm, ngoại kiểm; phối hợp xử lý các sai lệch.",
